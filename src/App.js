@@ -107,12 +107,12 @@ function App() {
       img.src = preview;
       //edited end
       // context.fillRect(100, 100, 100, 100);
-      canvas.width = 700;
-      canvas.height = 700;
+      canvas.width = 400;
+      canvas.height = 400;
 
       context.filter = getImageStyle().filter;
       img.addEventListener("load", function () {
-        context.drawImage(img, 0, 0, 700, 700);
+        context.drawImage(img, 0, 0, 400, 400);
         let tagA = document.createElement("a");
         document.body.appendChild(tagA);
         tagA.href = canvas.toDataURL();
@@ -154,7 +154,7 @@ function App() {
         />
       )}
       {selectedFile && (
-        <button onClick={canvasToImg} style={{ marginLeft: 20 }}>
+        <button className="btn" onClick={canvasToImg} style={{ marginLeft: 20 }}>
           Download
         </button>
       )}

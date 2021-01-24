@@ -33,7 +33,10 @@ const UploadImage = ({
   };
   return (
     <div>
-      <input type="file" onChange={onSelectFile} />
+      <label for="file-upload" class="custom-file-upload">
+        <i class="fa fa-cloud-upload"></i> Custom Upload
+      </label>
+      <input type="file" id="file-upload" onChange={onSelectFile} />
     </div>
   );
 };
