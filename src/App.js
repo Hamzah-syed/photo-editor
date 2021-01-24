@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "./App.css";
 import Slider from "./Slider";
 import SidebarItem from "./SidebarItem";
-import Img from "./img/profile.jpg";
+
 import UploadImage from "./uploadImage";
 
 const DEFAULT_OPTIONS = [
@@ -104,7 +104,7 @@ function App() {
       let img = new Image();
       //edited from
       img.crossOrigin = "anonymous";
-      img.src = Img;
+      img.src = preview;
       //edited end
       // context.fillRect(100, 100, 100, 100);
       canvas.width = 700;
