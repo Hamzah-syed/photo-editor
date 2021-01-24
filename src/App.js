@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef } from "react";
 import "./App.css";
 import Slider from "./Slider";
 import SidebarItem from "./SidebarItem";
