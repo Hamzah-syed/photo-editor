@@ -146,7 +146,12 @@ function App() {
         />
       </div>
       {selectedFile && (
-        <img className="main-image" src={preview} style={getImageStyle()} />
+        <img
+          alt="image"
+          className="main-image"
+          src={preview}
+          style={getImageStyle()}
+        />
       )}
       {selectedFile && (
         <button onClick={canvasToImg} style={{ marginLeft: 20 }}>
