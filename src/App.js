@@ -147,7 +147,7 @@ function App() {
       </div>
       {selectedFile && (
         <img
-          alt="image"
+          alt="edit-image"
           className="main-image"
           src={preview}
           style={getImageStyle()}
