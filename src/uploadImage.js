@@ -34,9 +34,14 @@ const UploadImage = ({
   return (
     <div>
       <label for="file-upload" class="custom-file-upload">
-        <i class="fa fa-cloud-upload"></i> Custom Upload
+        <i class="fa fa-cloud-upload"></i> Browse Image
       </label>
-      <input type="file" id="file-upload" onChange={onSelectFile} />
+      <input
+        type="file"
+        id="file-upload"
+        accept="image/*"
+        onChange={onSelectFile}
+      />
     </div>
   );
 };
